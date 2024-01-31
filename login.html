@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Style/loginStyle.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="assest/images.png">
+</head>
+
+<body>
+    <main>
+        <div class="login_form" id="loginForm">
+            <div class="details">
+                <div class="welcome">Welcome</div>
+                <form action="">
+                    <div class="Email">
+                        <label>Email</label>
+                        <input type="email" class="input" required>
+                    </div>
+
+                    <div class="Password">
+                        <label>Password</label>
+                        <input type="password" class="input" data-type="password" required>
+                    </div>
+
+                    <div class="Forgot">
+                        <label><a  onclick="openForm()"> Forgot password ?</a> </label>
+                    </div>
+
+                    <button type="submit" class="button"> 
+                        <a href= "index.html"> 
+                            <h1 class="sign"> Sign in </h1> 
+                        </a>
+                    </button>
+                </form>
+
+
+            </div>
+
+            <div class="details-two">
+                <img class="gift" src="assest/images.png">
+                <h1 class="back">Welcome back <br>EJ Gift! </h1>
+
+                <h2 class="Account">You don't have an account?</h2>
+
+                <button class="Create open-button" onclick="openForm()"> <h3>Create Account</h3></button>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- create an account Form -->
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Create Account</h1>
+
+            <label for="name"> Name  </label>
+            <input type="text" placeholder="Enter first name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw">Password</label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="add">Address </label>
+            <input type="address1" placeholder="Enter address1" name="address1" required>
+
+            <label for="num"> Phone Number </label>
+            <input type="number" placeholder="Enter your number" min="0000000000" max="9999999999" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+
+
+
+        <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+                document.getElementById("loginForm").style.opacity = 0.3;
+
+            }
+
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+                document.getElementById("loginForm").style.opacity = 1;
+            }
+        </script>
+
+</body>
+
+</html>

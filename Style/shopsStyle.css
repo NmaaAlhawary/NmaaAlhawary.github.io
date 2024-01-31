@@ -1,0 +1,149 @@
+/* card */
+
+h1 {
+    text-align: center;
+    height: 100px;
+    line-height: 150px;
+    font-size: 40px;
+    animation: bouncein 3s infinite ease-in-out;
+}
+
+@keyframes bouncein {
+    0% {
+        transform: scale(0);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+div.cards {
+    margin: 8px auto;
+    max-width: 960px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div .card {
+    background: #fb966f;
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    margin: 20px 2px;
+}
+
+.title-img {
+    margin: 6px 15px 10px;
+    padding: 2px;
+    position: relative;
+    z-index: 0;
+}
+
+.imag-card img {
+    width: 300px;
+    height: 400px;
+}
+
+.title {
+    font-size: 25px;
+    color: black;
+}
+
+.price {
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 15px;
+    color: black;
+}
+
+img:hover {
+    transform: translateY(3px);
+}
+
+a.button {
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(171, 248, 164, 0.87);
+    color: black;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 3);
+    padding: 2%;
+}
+
+a.button:hover {
+    transform: translateY(-3px);
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    margin: 0;
+    padding: 0;
+}
+
+small {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------- media query ---------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Apple iPhone 12 Pro */
+
+@media only screen and (min-width: 390px) and (max-width: 767px) {
+    h1 {
+        height: 50px;
+        line-height: 80px;
+        font-size: 20px;
+    }
+    div.cards {
+        max-width: 767px;
+    }
+    div .card {
+        width: 150px;
+        height: 200px;
+    }
+    .imag-card img {
+        width: 150px;
+        height: 200px;
+    }
+    .title {
+        font-size: 12px;
+    }
+    .price {
+        font-size: 10px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    h2 {
+        font-size: 8px;
+    }
+    a.button {
+        font-size: 10px;
+    }
+}

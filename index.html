@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- style -->
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="assest/images.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenier">
+            <div class="menue-left">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-gift logo">
+                        <span class="nav-title"> EJ website </span>
+                    </i>
+                </a>
+
+            </div>
+            <div class="menue-right">
+
+                <nav class="nav-items">
+                    </label>
+                    <ul class="menu-items" id="menu">
+                        <li><a href="index.html"> Home</a> </li>
+                        <li><a href="cake.html"> Cake </a> </li>
+                        <li><a href="flower.html">Flower </a> </li>
+                        <li><a href="cart.html"> Cart  </a> </li>
+                        <li><a href="login.html">Login </a> </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- slider -->
+        <section class="slider">
+            <img class="myimg" src="assest/yy1.png">
+            <img class="myimg" src="assest/cccccccccccccccccccc.jpg">
+
+        </section>
+
+        <section class="note">
+            <p>What Are You Looking For?</p>
+            <div class="cards">
+                <!-- card1 -->
+                <div class="card">
+                    <div class="imag-card">
+                        <img src="assest/homePageFlower.jpeg">
+                    </div>
+                    <div class="title-img">
+                        <h3 class="title">
+                            <a href="flower.html">Flowers</a>
+                        </h3>
+
+
+                    </div>
+                </div>
+
+                <!-- card2 -->
+                <div class="card">
+                    <div class="imag-card">
+                        <img src="assest/homePageCake.jpeg">
+                    </div>
+                    <div class="title-img">
+                        <h3 class="title">
+                            <a href="cake.html">Cakes</a>
+                        </h3>
+
+                    </div>
+                </div>
+
+        </section>
+    </main>
+
+    <footer id="contact">
+        <ul>
+            <div id="icon-container">
+                <a target="_black " href="https://twitter.com">
+                    <div id="icon">
+                        <li><i class="fab fa-twitter"></i></li>
+                    </div>
+                </a>
+                <a target="_black" href="https://www.instagram.com/">
+                    <div id="icon">
+                        <li><i class="fab fa-instagram"></i></li>
+                    </div>
+                </a>
+                <a target="_black" href="https://web.facebook.com/">
+                    <div id="icon">
+                        <li><i class="fab fa-facebook-f"></i></li>
+                    </div>
+                </a>
+        </ul>
+        <p>&copy 2021-2022 EJ</p>
+    </footer>
+    <!-- script -->
+    <script>
+        // slider
+        var myhome = 0;
+        sliderFun();
+
+        function sliderFun() {
+
+            var x = document.getElementsByClassName("myimg");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myhome++;
+            if (myhome > x.length) {
+                myhome = 1
+            }
+            x[myhome - 1].style.display = "block";
+            setTimeout(sliderFun, 3000);
+        }
+    </script>
+</body>
+
+</html>

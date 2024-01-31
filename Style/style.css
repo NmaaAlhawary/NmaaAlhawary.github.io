@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Corinthia", cursive;
+}
+
+
+/* style nav bar*/
+
+.header {
+    background-color: rgba(251, 150, 111, 0.6);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* use to move ...se w3schools */
+    z-index: 110;
+    padding: 10px 30px;
+}
+
+.logo {
+    color: black;
+    font-size: 1.5em;
+}
+
+.contenier {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 25px;
+}
+
+.nav-items>ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-items ul li {
+    float: left;
+    margin-left: 5px;
+    position: relative;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-items ul li a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    line-height: 1.5;
+}
+
+.nav-items ul li:hover a {
+    color: #f45f34;
+    text-decoration: underline;
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+
+/* style main and its conten */
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+
+/* slider */
+
+.slider img {
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+}
+
+.note {
+    margin: 10px;
+    padding: 10px;
+}
+
+.note p {
+    font-size: 30px;
+    padding: 5px;
+    margin: 20px;
+    line-height: 10px;
+    font-weight: bolder;
+    text-align: center;
+    animation: bouncein 3s infinite ease-in-out;
+}
+
+
+/* animation */
+
+@keyframes bouncein {
+    0% {
+        transform: scale(0);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* card */
+
+div.cards {
+    max-width: 960px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div .card {
+    background: #fb966f;
+    display: inline-block;
+    width: 450px;
+    margin: 10px;
+}
+
+.imag-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.title a {
+    text-decoration: none;
+    color: black;
+}
+
+.title a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+
+/* ============================================================================================================================== */
+
+
+/* =============================================================================================================================== */
+
+
+/* footer */
+
+footer {
+    margin-top: 30px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+#contact a {
+    color: black;
+    margin: 10px;
+}
+
+#contact {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgba(251, 150, 111, 0.6);
+}
+
+#icon {
+    background-color: gray;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+#icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 5px 5px rgb(0 0 0 / 12%), 0 3px 5px rgb(0 0 0 / 24%);
+}
+
+#contact p {
+    font-size: 14px;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------- media query ---------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Apple iPhone 12 Pro */
+
+@media only screen and (min-width: 390px) and (max-width: 767px) {
+    /* nav */
+    .logo {
+        font-size: 1.3em;
+    }
+    .nav-title {
+        font-size: 15px;
+    }
+    .nav-items ul li a {
+        font-size: 10px;
+    }
+    /* slider */
+    .slider img {
+        height: 250px;
+    }
+    .note {
+        margin: 4px;
+        padding: 4px;
+    }
+    .note p {
+        font-size: 15px;
+    }
+    /* card */
+    div.cards {
+        max-width: 767px;
+    }
+    div .card {
+        width: 250px;
+    }
+    .title {
+        font-size: 15px;
+    }
+    /* Contact info */
+    .contatInfo h3 {
+        font-size: 15px;
+        line-height: 50px;
+    }
+    .contatInfo {
+        margin: 5px;
+        font-size: 10px;
+    }
+    #contactImages {
+        margin-left: 90px;
+    }
+    #contactImages img {
+        width: 15%;
+        padding: 10px;
+        margin: 10px;
+    }
+    /* footer */
+    footer {
+        margin-top: 15px;
+    }
+    #contact a {
+        margin: 5px;
+    }
+    #contact {
+        height: 30px;
+    }
+    #icon {
+        width: 10px;
+        height: 10px;
+    }
+    #contact p {
+        font-size: 7px;
+    }
+}
