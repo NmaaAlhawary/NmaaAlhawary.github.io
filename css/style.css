@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+}
+
+main {
+  margin-bottom: 200px;
+}
+
+.btn-outline-info:hover {
+  color: #1e1e24;
+  border: solid 1px #1e1e24;
+  background-color: #ffffff;
+}
+
+.btn-outline-info {
+  color: #ffffff;
+  background-color: #1e1e24;
+  border: solid 1px #ffffff;
+}
+
+.navbar {
+  background-color: #1e1e24 !important;
+}
+
+#mainNavigation {
+  border-bottom: solid 1px #ffffff;
+}
+
+.navbar .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar .navbar-brand:hover {
+  color: #da373f !important;
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar .nav-link:hover {
+  color: #da373f !important;
+}
+
+.title {
+  text-align: left;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #1e1e24;
+  color: #ffffff;
+}
+
+.carousel-item img {
+  max-height: 400px;
+}
+
+.card {
+  background-color: #ffffff;
+}
+
+.card:hover {
+  box-shadow: 5px 10px 8px #888888;
+  transition: 0.5s;
+  border-color: #da373f;
+}
+
+.btn-primary {
+  background-color: #1e1e24;
+  border: solid 1px #1e1e24;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  color: #1e1e24;
+  border: solid 1px #1e1e24;
+}
+
+.btn:focus {
+  background-color: #da373f !important;
+  border-color: #da373f !important;
+}
+
+.hoveredText:hover {
+  color: #da373f !important;
+}
+
+#footer {
+  background-color: #1e1e24 !important;
+  border-top: solid 1px #ffffff;
+}
+
+#footer a i {
+  color: #ffffff;
+}
+
+#footer a i:hover {
+  color: #ffffff;
+}
+
+#footer2 {
+  background-color: #da373f;
+  color: #ffffff !important;
+  font-size: 12px;
+}
+
+.pageTitle,
+#adminPageTitle {
+  /*text-align: center;*/
+  color: #1e1e24;
+  margin: 15px 0;
+  /*margin: 15px auto;*/
+}
+
+table tbody tr td i {
+  padding: 0px 5px;
+  color: #1e1e24;
+}
+
+table tbody tr td i:hover {
+  cursor: pointer;
+  color: #da373f;
+}
+
+.back {
+  color: #1e1e24;
+}
+
+.back:hover {
+  cursor: pointer;
+  color: #da373f;
+}
+
+.post:hover {
+  box-shadow: none;
+  transform: none;
+  transition: none;
+}
+
+table.table-bordered {
+  border: 1px solid #1e1e24 !important;
+  margin-top: 20px;
+}
+
+table.table-bordered>thead>tr>th {
+  border: 1px solid #1e1e24 !important;
+}
+
+table.table-bordered>tbody>tr>td {
+  border: 1px solid #1e1e24 !important;
+}
+
+.viewLink {
+  text-decoration: underline;
+}
+
+link link-primary {
+  color: #1e1e24 !important;
+}
+
+link link-primary:hover,
+link link-primary:focus {
+  color: #da373f !important;
+}
